@@ -11,6 +11,10 @@
             Settings.LoadFromFile("D:\\QFL\\qkey.txt");
             //Settings.Load();
 
+            // 使用前请先定义您的JSON序列化、反序列化方法
+            Qiniu.JSON.JsonHelper.JsonSerializer = new AnotherJsonSerializer();
+            Qiniu.JSON.JsonHelper.JsonDeserializer = new AnotherJsonDeserializer();
+
             #region Qiniu-IO
 
             // 上传一个文件

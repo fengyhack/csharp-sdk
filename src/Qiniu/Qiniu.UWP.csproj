@@ -123,8 +123,6 @@
     <Compile Include="JSON\IJsonDeserializer.cs" />
     <Compile Include="JSON\IJsonSerializer.cs" />
     <Compile Include="JSON\JsonPropertyAttribute.cs" />
-    <Compile Include="JSON\NewtonsoftJsonDeserializer.cs" />
-    <Compile Include="JSON\NewtonsoftJsonSerializer.cs" />
     <Compile Include="QiniuCSharpSDK.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="JSON\JsonHelper.cs" />

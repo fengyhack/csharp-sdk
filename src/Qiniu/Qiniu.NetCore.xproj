@@ -18,8 +18,6 @@
     <Compile Include="JSON\IJsonSerializer.cs" />
     <Compile Include="JSON\JsonHelper.cs" />
     <Compile Include="JSON\JsonPropertyAttribute.cs" />
-    <Compile Include="JSON\NewtonsoftJsonDeserializer.cs" />
-    <Compile Include="JSON\NewtonsoftJsonSerializer.cs" />
     <Compile Include="Common\Config.cs" />
     <Compile Include="Common\Zone.cs" />
     <Compile Include="Common\ZoneHelper.cs" />

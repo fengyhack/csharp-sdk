@@ -33,7 +33,7 @@ namespace Qiniu.UnitTest
 
             putPolicy.SetExpires(3600);
 
-            JsonHelper.JsonSerializer = new AnotherJsonSerializer();
+            JsonHelper.JsonSerializer = new NewtonsoftJsonSerializer();
 
             string jstr = JsonHelper.Serialize(putPolicy);
 
@@ -46,7 +46,7 @@ namespace Qiniu.UnitTest
             string jstr = "{ \"scope\":\"test\", \"deadline\":12345 }";
             Qiniu.IO.Model.PutPolicy putPolicy = null;
 
-            JsonHelper.JsonDeserializer = new AnotherJsonDeserializer();
+            JsonHelper.JsonDeserializer = new NewtonsoftJsonDeserializer();
 
             bool ok = JsonHelper.Deserialize(jstr,out putPolicy);
 
@@ -56,7 +56,7 @@ namespace Qiniu.UnitTest
 
     }
 
-    class AnotherJsonSerializer:IJsonSerializer
+    class NewtonsoftJsonSerializer:IJsonSerializer
     {
         public string Serialize<T>(T obj) where T:new()
         {
@@ -67,7 +67,7 @@ namespace Qiniu.UnitTest
         }
     }
 
-    class AnotherJsonDeserializer:IJsonDeserializer
+    class NewtonsoftJsonDeserializer:IJsonDeserializer
     {
         public bool Deserialize<T>(string str, out T obj) where T : new()
         {
