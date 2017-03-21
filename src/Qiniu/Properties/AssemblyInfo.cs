@@ -5,9 +5,46 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
+
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("QINIU")]
 
+#if PCL
+
+#if Net20
+
+[assembly: AssemblyProduct("Qiniu (Cloud) C# SDK v7.2.15 (Mono 2.0)")]
+[assembly: AssemblyTitle("Qiniu (Cloud) C# SDK v7.2.15 (Mono 2.0)")]
+[assembly: AssemblyDescription("Qiniu (Cloud) C# SDK v7.2.15 (Mono 2.0)")]
+
+#elif Net35
+
+[assembly: AssemblyProduct("Qiniu (Cloud) C# SDK v7.2.15 (Mono 3.5)")]
+[assembly: AssemblyTitle("Qiniu (Cloud) C# SDK v7.2.15 (Mono 3.5)")]
+[assembly: AssemblyDescription("Qiniu (Cloud) C# SDK v7.2.15 (Mono 3.5)")]
+
+#elif Net40
+
+[assembly: AssemblyProduct("Qiniu (Cloud) C# SDK v7.2.15 (Mono 4.0)")]
+[assembly: AssemblyTitle("Qiniu (Cloud) C# SDK v7.2.15 (Mono 4.0)")]
+[assembly: AssemblyDescription("Qiniu (Cloud) C# SDK v7.2.15 (Mono 4.0)")]
+
+#elif Net45
+
+[assembly: AssemblyProduct("Qiniu (Cloud) C# SDK v7.2.15 (Mono 4.5)")]
+[assembly: AssemblyTitle("Qiniu (Cloud) C# SDK v7.2.15 (Mono 4.5)")]
+[assembly: AssemblyDescription("Qiniu (Cloud) C# SDK v7.2.15 (Mono 4.5)")]
+
+#elif Net46
+
+[assembly: AssemblyProduct("Qiniu (Cloud) C# SDK v7.2.15 (Mono 4.6)")]
+[assembly: AssemblyTitle("Qiniu (Cloud) C# SDK v7.2.15 (Mono 4.6)")]
+[assembly: AssemblyDescription("Qiniu (Cloud) C# SDK v7.2.15 (Mono 4.6)")]
+
+#endif
+
+#else
+	
 #if Net20
 
 [assembly: AssemblyProduct("Qiniu (Cloud) C# SDK v7.2.15 (.NET 2.0)")]
@@ -19,12 +56,6 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyProduct("Qiniu (Cloud) C# SDK v7.2.15 (.NET 3.5)")]
 [assembly: AssemblyTitle("Qiniu (Cloud) C# SDK v7.2.15 (.NET 3.5)")]
 [assembly: AssemblyDescription("Qiniu (Cloud) C# SDK v7.2.15 (.NET 3.5)")]
-
-#elif JEDISYNC
-
-[assembly: AssemblyProduct("Qiniu (Cloud) C# SDK v7.2.15 (JediSync-NET40)")]
-[assembly: AssemblyTitle("Qiniu (Cloud) C# SDK v7.2.15 (JediSync-NET40)")]
-[assembly: AssemblyDescription("Qiniu (Cloud) C# SDK v7.2.15 (JediSync-NET40)")]
 
 #elif Net40
 
@@ -64,14 +95,19 @@ using System.Runtime.InteropServices;
 
 #endif
 
+#endif
+
+
 [assembly: AssemblyTrademark("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
 // to COM components.  If you need to access a type in this assembly from
 // COM, set the ComVisible attribute to true on that type.
+
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
+
 [assembly: Guid("957cd434-8b12-46ce-980b-09ca26ed340d")]
 
 [assembly: AssemblyCopyright("Copyright ©  2017")]

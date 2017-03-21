@@ -11,35 +11,49 @@
 /// </summary>
 public class QiniuCSharpSDK
 {
-    /// <summary>
-    /// SDK名称
-    /// </summary>
-    public const string ALIAS = "QiniuCSharpSDK";
+	/// <summary>
+	/// SDK名称
+	/// </summary>
+	public const string ALIAS = "QiniuCSharpSDK";
 
-    /// <summary>
-    /// 目标框架
-    /// </summary>
+	/// <summary>
+	/// 目标框架
+	/// </summary>
+#if PCL
 #if Net20
-    public const string RTFX = "NET20";
+    	public const string RTFX = "MONO20";
 #elif Net35
-    public const string RTFX = "NET35";
+    	public const string RTFX = "MONO35";
 #elif Net40
-    public const string RTFX = "NET40";
+		public const string RTFX = "MONO40";
 #elif Net45
-    public const string RTFX = "NET45";
+    	public const string RTFX = "MONO45";
 #elif Net46
-    public const string RTFX = "NET46";
-#elif NetCore
-    public const string RTFX = "NETCore";
-#elif WINDOWS_UWP
-    public const string RTFX = "UWP";
+    	public const string RTFX = "MONO46";
+#endif
 #else
-    public const string RTFX = "UNKNOWN";
+#if Net20
+    	public const string RTFX = "NET20";
+#elif Net35
+    	public const string RTFX = "NET35";
+#elif Net40
+		public const string RTFX = "NET40";
+#elif Net45
+    	public const string RTFX = "NET45";
+#elif Net46
+    	public const string RTFX = "NET46";
+#elif NetCore
+    	public const string RTFX = "NETCore";
+#elif WINDOWS_UWP
+		public const string RTFX = "UWP";
+#else
+		public const string RTFX = "UNKNOWN";
+#endif
 #endif
 
-    /// <summary>
-    /// SDK版本号
-    /// </summary>
-    public const string VERSION = "7.2.15";
+	/// <summary>
+	/// SDK版本号
+	/// </summary>
+	public const string VERSION = "7.2.15";
 
 }

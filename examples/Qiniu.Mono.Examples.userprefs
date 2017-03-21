@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{54329690-1B5B-4FB2-AF1C-35C5E3A1DA60}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Qiniu.Mono.Examples\Program.cs">
+    <Files>
+      <File FileName="Qiniu.Mono.Examples\Program.cs" Line="4" Column="13" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Examples PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

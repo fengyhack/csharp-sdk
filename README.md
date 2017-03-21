@@ -1,16 +1,10 @@
-#Qiniu (Cloud) C# SDK (Modified)
+#Qiniu (Cloud) C# SDK (Mono/.NET)
 
 [![Documentation](https://img.shields.io/badge/Qiniu%20C%23%20SDK-Documentation-brightgreen.svg)](https://developer.qiniu.com/kodo/sdk/csharp) [![Supported](https://img.shields.io/badge/Supported-.NET2.0%2B%2F.NETCore%2FUWP-brightgreen.svg)](#)
 
 [![GitHub release](https://img.shields.io/github/release/qiniu/csharp-sdk.svg?label=github)](https://github.com/qiniu/csharp-sdk/releases) [![Github Downloads](https://img.shields.io/github/downloads/qiniu/csharp-sdk/total.svg?colorB=aaaaff)](https://github.com/qiniu/csharp-sdk/releases) [![NuGet release](https://img.shields.io/nuget/v/Qiniu.Shared.ExtJson.svg?colorB=aa77ff)](https://www.nuget.org/packages/Qiniu.Shared.ExtJson)  [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/qiniu/csharp-sdk/master/LICENSE)
 
-此版本**移除了对于Json.NET的依赖**，我们称之为`ext-json`版本。
-
-安装时，请选择`ext-json`版本，或者在NuGet中搜索`Qiniu.Shared.ExtJson`，又或者
-
-```script
-Install-Package Qiniu.Shared.ExtJson
-```
+此版本从`v7.2-ext-json`改写，基于Mono/.NET
 
 在使用的时候**需要预先设置您的JSON序列化和反序列化器**。
 
